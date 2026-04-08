@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx = 4; /* border pixel of windows */
+static const unsigned int borderpx = 3; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const unsigned int systraypinning =
     0; /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor
@@ -18,7 +18,7 @@ static const int topbar = 1;      /* 0 means bottom bar */
 static const int focusonwheel = 0;
 static const int user_bh =
     4; /* 2 is the default spacing around the bar's font */
-static const char font[] = "monospace 14";
+static const char font[] = "Hack Nerd Font 12";
 static const char dmenufont[] = "monospace:size=10";
 static const char col_gray1[] = "#222222";
 static const char col_gray2[] = "#444444";
@@ -27,10 +27,10 @@ static const char col_gray4[] = "#eeeeee";
 static const char col_cyan[] = "#005577";
 static const char norm_border[] = "#3f3f36";
 static const char norm_fg[] = "#eceff4";
-static const char norm_bg[] = "#2e3440";
+static const char norm_bg[] = "#2d2825";
 static const char sel_border[] = "#eceff4";
 static const char sel_fg[] = "#eceff4";
-static const char sel_bg[] = "#5e81ac";
+static const char sel_bg[] = "#5e936c";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {norm_fg, norm_bg, norm_border},
