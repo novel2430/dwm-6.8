@@ -1989,8 +1989,8 @@ void togglefloating(const Arg *arg) {
     return;
   selmon->sel->isfloating = !selmon->sel->isfloating || selmon->sel->isfixed;
   if (selmon->sel->isfloating)
-    resize(selmon->sel, selmon->sel->x, selmon->sel->y, selmon->sel->w,
-           selmon->sel->h, 0);
+    resize(selmon->sel, selmon->sel->x, selmon->sel->y, selmon->sel->w / 2,
+           selmon->sel->h / 2, 0);
   arrange(selmon);
 }
 
