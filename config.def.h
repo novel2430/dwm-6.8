@@ -1,5 +1,21 @@
 /* See LICENSE file for copyright and license details. */
 
+/* center clock: shown in the title area when enabled.
+ * The right-side xsetroot/xsettool status text is still drawn normally.
+ * Format follows strftime(3), e.g. "%Y-%m-%d %H:%M".
+ */
+#ifndef CENTER_CLOCK_ENABLED
+#define CENTER_CLOCK_ENABLED 1
+#endif
+#ifndef CENTER_CLOCK_FORMAT
+#define CENTER_CLOCK_FORMAT "󰥔 %Y-%m-%d %a %H:%M"
+#endif
+#ifndef CENTER_CLOCK_INTERVAL
+#define CENTER_CLOCK_INTERVAL 1
+#endif
+
+#ifndef CENTER_CLOCK_CONFIG_ONLY
+
 /* appearance */
 static const unsigned int borderpx = 3; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
@@ -140,3 +156,5 @@ static const Button buttons[] = {
     {ClkTagBar, MODKEY, Button1, tag, {0}},
     {ClkTagBar, MODKEY, Button3, toggletag, {0}},
 };
+
+#endif /* CENTER_CLOCK_CONFIG_ONLY */
