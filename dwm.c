@@ -899,8 +899,9 @@ void drawbar(Monitor *m) {
       } else {
         /* Center against the full monitor width, not the drawable bar width.
          * The systray lives at the edge and may shrink barwin; using
-         * m->ww - stw here would shift the clock left whenever tray icons exist.
-         * Clamp only when the ideal center would overlap tags/layout/status.
+         * m->ww - stw here would shift the clock left whenever tray icons
+         * exist. Clamp only when the ideal center would overlap
+         * tags/layout/status.
          */
         cx = (m->ww - cw) / 2;
         if (cx < x)
